@@ -25,7 +25,7 @@
                             <div class="form-group">
                                 <label for="description">Description:</label>
                                 <textarea name="description" class="form-control @error('description') is-invalid @enderror"
-                                    rows="6" cols="2">{{ $food->description }}</textarea>
+                                    rows="10" cols="2">{{ $food->description }}</textarea>
                                 @error('description') <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span> @enderror <br>

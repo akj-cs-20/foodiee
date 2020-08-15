@@ -13,7 +13,7 @@
                         </div>
                     @endif
 
-                    <div class="card">
+                    <div class="card ">
                         <div class="card-header">Add Food Section</div>
 
                         <div class="card-body">
@@ -30,8 +30,9 @@
                                 <br>
                                 <!--Description-->
                                 <label for="description">Description:</label>
-                                <input class="form-control  @error('description') is-invalid @enderror" name="description"
-                                    placeholder="Enter about food" id="description" cols="2" rows="6"></textarea>
+                                <textarea class="form-control  @error('description') is-invalid @enderror"
+                                    name="description" placeholder="Enter about food" id="description" cols="2"
+                                    rows="6"></textarea>
                                 @error('description')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
