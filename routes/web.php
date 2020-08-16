@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('category', 'CategoryController')->middleware('auth');
