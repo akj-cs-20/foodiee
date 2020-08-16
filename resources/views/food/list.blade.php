@@ -6,7 +6,7 @@
         @foreach ($categories as $category)
 
             @if ($category->id != null)
-                <h3 class="text-primary">{{ $category->name }}</h3>
+                <h3 class="text-info">{{ $category->name }}</h3>
                 <div class="row jumbotron bg-white">
 
                     @foreach (App\Food::where('category_id', $category->id)->get() as $food)
